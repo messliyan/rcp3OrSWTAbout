@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="rcp.intro.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="rcp.intro.Perspective"
+            name="RCP Perspective"
+            id="RCP.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="RCP Product"
+            application="RCP.application">
+         <property
+               name="windowImages"
+               value="icons/eclipse16.png,icons/eclipse32.png,icons/eclipse48.png,icons/eclipse64.png, icons/eclipse128.png,icons/eclipse256.png">
+         </property>
+         <property
+               name="appName"
+               value="RCP Product">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <intro
+            id="rcp.intro"
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart">
+      </intro>
+      <introProductBinding
+            introId="rcp.intro"
+            productId="RCP.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            id="RCP.configId"
+            introId="rcp.intro"
+            content="introContent.xml">
+         <presentation
+               home-page-id="root">
+            <implementation
+                  os="win32,linux,macosx"
+                  kind="html">
+            </implementation>
+         </presentation>
+      </config>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="rcp.UserViewPart"
+            id="com.rcp.example.module.f.viewpart.UserViewPart"
+            name="name"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

@@ -1,0 +1,14 @@
+1、TEXT改变前景色 可以使字体变淡
+	text_4.setForeground(SWTResourceManager.getColor(SWT.COLOR_INFO_FOREGROUND));
+					
+	背景色不用改变
+2、text提示使用FocusListener
+
+			FocusListener focusListener=new FocusListener() {
+
+				@Override
+				public void focusGained(FocusEvent e) {
+
+					}
+
+				}

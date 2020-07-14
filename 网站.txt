@@ -1,0 +1,3 @@
+https://www.eclipse.org/swt/widgets/
+
+https://www.eclipse.org/nebula/

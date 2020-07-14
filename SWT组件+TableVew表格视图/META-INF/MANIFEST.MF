@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Mywat
+Bundle-SymbolicName: basic;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: BOLD
+Automatic-Module-Name: mywat
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.swt;bundle-version="3.107.0",
+ SWT____;bundle-version="1.0.0",
+ org.eclipse.jface;bundle-version="3.14.0",
+ org.eclipse.ui
+Import-Package: org.eclipse.jface.databinding.swt,
+ org.eclipse.jface.viewers,
+ org.eclipse.ui.actions

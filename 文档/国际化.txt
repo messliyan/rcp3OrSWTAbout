@@ -1,0 +1,7 @@
+,reference\:file\:org.eclipse.ui.nl_zh_4.4.0.v20161126102919.jar@4,reference\:file\:org.eclipse.ui.workbench.texteditor.nl_zh_4.4.0.v20161126102919.jar@4,reference\:file\:org.eclipse.ui.workbench.nl_zh_4.4.0.v20161126102919.jar@4,reference\:file\:org.eclipse.ui.editors.nl_zh_4.4.0.v20161126102919.jar@4
+
+
+
+
+
+末尾加 jar@4 和上面这个
